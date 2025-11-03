@@ -1,4 +1,7 @@
 import pytest
+import sys, os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from datetime import datetime
 from agro_store.model.pest_control import PestControl
 from agro_store.model.antibiotic import Antibiotic
@@ -24,3 +27,5 @@ def test_client_can_have_multiple_invoices():
     client.invoices.append(Invoice(datetime.now()))
     client.invoices.append(Invoice(datetime.now()))
     assert len(client.invoices) == 2
+
+    

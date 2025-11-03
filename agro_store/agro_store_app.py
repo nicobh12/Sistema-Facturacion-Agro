@@ -31,10 +31,7 @@ def main():
     print(f"Factura fecha: {invoice.date}")
     print(f"Total: {invoice.total:.2f}")
 
-
-    input("Pausa para debugging - pon un breakpoint en esta línea")
-
-
+    breakpoint()  
 
 
 if __name__ == '__main__':
